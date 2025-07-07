@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/cda698fb-5072-49a7-a68a-7d1f43b01c38>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3d641de5-13af-4f88-9297-f3513e10c9e3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3d641de5-13af-4f88-9297-f3513e10c9e3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 23e90ec6-48cd-4f34-a871-3c58d2cf44dd
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/23e90ec6-48cd-4f34-a871-3c58d2cf44dd>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 0b61143b-6804-4e4d-9a5c-27fcf5bf4e46
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    audio: false
+    inputTrack: false
+    outputAudio: false
+    rate: false
+    sampleRate: false
+    volume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - inputTrack: !<reference.AudioTrackAsset[]>
+        []
+      outputAudio: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      sampleRate: !<float> 44100.000000
+      rate: !<float> 1.000000
+      volume: !<float> 1.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input Asset.AudioTrackAsset[] inputTrack = {} {"hint":"Input audio tracks"}'
+    - '// @input Asset.AudioTrackAsset outputAudio {"hint":"Output audio track for processed audio"}'
+    - '// @input Component.AudioComponent audio {"hint":"Audio component that plays the output"}'
+    - '// @input float sampleRate = 44100 {"hint":"Sample rate"}'
+    - '// @input float rate = 1 {"hint":"Playback rate/pitch", "widget":"slider", "min":0, "max":3, "step":1}'
+    - '// @input float volume = 1 {"hint":"Volume", "widget":"slider", "min":0, "max":2, "step":1}'

@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/fb01ec7e-825b-4633-ac6b-a3a4f1746727>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f9fc52a6-29d7-40df-b529-2f1dc5ff6a08
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f9fc52a6-29d7-40df-b529-2f1dc5ff6a08
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 7e8bd210-36e0-48cf-a1d4-f8906ded44a0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/7e8bd210-36e0-48cf-a1d4-f8906ded44a0>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 76fce576-ef98-4348-899e-a665023ab7f5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    enableDebugLogging: false
+    smoothingFactor: false
+    targetObject: false
+    velocityThreshold: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - targetObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      smoothingFactor: 0.700000
+      velocityThreshold: 0.010000
+      enableDebugLogging: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject targetObject {"hint":"The object to track for acceleration calculations"}'
+    - '// @input float smoothingFactor = 0.7 {"hint":"Smoothing factor for velocity calculations (0.0 = no smoothing, 0.9 = heavy smoothing)", "widget":"slider", "min":0, "max":0.95, "step":0.01}'
+    - '// @input float velocityThreshold = 0.01 {"hint":"Minimum velocity threshold to register movement"}'
+    - '// @input bool enableDebugLogging {"hint":"Enable debug logging of calculated values"}'
